@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Health and AI Assistant</title>
+</head>
+<body>
+
+    <h1>Vehicle Health Check and AI Assistant</h1>
+
+    <!-- File Upload Section -->
+    <h2>Upload Document (PDF, PPTX, DOCX)</h2>
+    <input type="file" id="fileInput" />
+    <button onclick="uploadFile()">Upload File</button>
+    <p>Extracted Content:</p>
+    <pre id="fileContent"></pre>
+
+    <!-- AI Query Section -->
+    <h2>Ask a Question</h2>
+    <input type="text" id="question" placeholder="Ask a question about the file content..." />
+    <button onclick="askQuestion()">Ask AI</button>
+    <p>AI Response:</p>
+    <pre id="answer"></pre>
+
+    <!-- Vehicle Health Section with Voice -->
+    <h2>Check Vehicle Health (Click and Speak)</h2>
+    <button id="speakButton">Click and Speak</button>
+    <p>Speech Output: <span id="speechOutput"></span></p>
+    <p>Vehicle Health Response: <pre id="result"></pre></p>
+
+    </body>
+</html>
